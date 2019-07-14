@@ -1,0 +1,122 @@
+.header-basket
+    background: url('../img/pageBasket/headerBg.png') 
+    height: 117px
+
+.order
+    margin-bottom: -185px
+    padding: 100px 0 200px
+    background: #ebebeb
+    &-blocks
+        width: 100%
+        display: flex
+        justify-content: space-around
+        background: #fff
+        border-radius: 10px
+        box-shadow: 3px 5px 15px 3px rgba(6, 7, 7, 0.28)
+
+
+.block-left
+    position: relative
+    &::before
+        content: ''
+        position: absolute
+        height: 100%
+        width: 1px
+        background-color: #5c5c5c
+        right: -10%
+
+.left
+    &-buttons
+        display: flex
+        justify-content: center
+    &-row
+        display: flex
+        align-items: center
+        // width: 700px
+        &__img
+            display: flex
+            justify-content: center
+            margin-right: 25px
+            width: 120px
+        &__options
+            width: 400px
+
+.btn
+    &__red,
+    &__black
+        margin: 70px auto
+        padding: 0px 50px
+        border-radius: 10px
+        background-color: $red
+        color: #ffffff
+        font-size: 18px
+        font-weight: 700
+        line-height: 48px
+        border: none
+    &__black
+        background-color: #131313
+
+.right-column
+    display: flex
+    flex-direction: column
+
+
+.right
+    &__input
+        margin-bottom: 10px
+        padding: 10px
+        height: 30px
+        border: 1px solid $red
+        border-radius: 5px
+
+
+
+
+
+
+input[type="checkbox"] 
+    display: none
+
+
+/* стили для метки */
+label 
+    color: #000
+    cursor: default
+    font-weight: normal
+    line-height: 30px
+    padding: 10px 0
+    vertical-align: middle
+
+
+label:before
+    content: ''
+    display: inline-block
+    width: 25px
+    height: 25px
+    margin-right: 15px
+    border: 1px solid $red
+    border-radius: 5px
+    vertical-align: middle
+
+
+
+input[type=checkbox]:checked + label:before
+    background-color: $red
+    outline: 1px solid $red
+    border: 4px solid #fff
+    border-radius: 10px
+    width: 19px
+    height: 19px
+
+
+.right-summ
+    display: flex
+    align-items: baseline
+    margin-top: 25px
+    &__check
+        margin-right: 30px
+        font-size: 18px
+        font-weight: 700
+        line-height: 48px
+    &__pay
+        font-size: 18px

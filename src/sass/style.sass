@@ -1,0 +1,78 @@
+$red: #ef483a
+    
+*
+    box-sizing: border-box
+    // overflow-x: hidden
+    
+
+body
+    margin: 0 !important
+    padding: 0
+    font-family: "GothamProMedium", sans-serif
+
+.container 
+    width: 1170px
+    margin: 0 auto
+
+
+
+img,
+button
+    cursor: pointer
+    outline: none
+    border: none
+
+button
+    padding: 10px 30px
+    border-radius: 10px
+    color: #fff
+    background-color: #4e5057
+    font-size: 18px
+
+
+ul
+    list-style-type: none
+a
+    color: #fff
+    text-decoration: none
+a:hover
+    color: $red
+
+hr
+    height: 1px
+    border: none
+    background-color: #5c5c5c
+
+.active
+    color: $red !important
+
+.btn
+    display: flex
+    margin: 70px auto
+    padding: 0px 50px
+    box-shadow: 0 0 27px rgba(213, 62, 62, 0.29)
+    border-radius: 10px
+    background-color: $red
+    color: #ffffff
+    font-size: 18px
+    font-weight: 700
+    line-height: 48px
+    border: none
+    &-b
+        background-color: #131313
+
+.descr-o
+    color: $red
+
+
+
+
+@import 'header'
+@import 'new-stickers'
+@import 'sticker-pack'
+@import 'adventures'
+@import 'partner'
+@import 'footer'
+
+@import 'shop'
+@import 'basket'

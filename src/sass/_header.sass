@@ -1,0 +1,87 @@
+.header 
+    width: 100%
+    height: 100vh
+    background: url('../img/fon.png') 
+    // border-bottom-right-radius: 50% 15%
+    // border-bottom-left-radius: 50% 15%
+    position: relative
+    &::after 
+        content: ''
+        background: url('../img/after.png')
+        height: 143px
+        position: absolute
+        bottom: 0
+        right: 0
+        left: 0
+        
+
+.nav
+    &-row
+        display: flex
+        justify-content: space-around
+        padding-top: 40px
+        &__blocks
+            display: flex
+            justify-content: space-around
+        &__basket
+            position: relative
+        &__circle
+            display: flex
+            justify-content: center
+            align-items: center
+            position: absolute
+            top: -15px
+            right: -10px
+            width: 24px
+            height: 24px
+            background: $red
+            color: #fff
+            border-radius: 50%
+            
+    &-block
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-right: 60px
+        
+.block
+    &__img 
+        margin-right: 10px
+    &__title
+        color: #ffffff
+        font-size: 20px
+        font-weight: 500
+
+.descr
+    margin-top: 15%
+    color: #fff
+    font-size: 48px
+    font-weight: 700
+    line-height: 48px
+    margin-left: 50%
+    transform: translateX(-50%)
+    text-align: center
+    &-o
+        color: $red !important
+
+
+
+.heroes
+    transform: translateY(-7%)
+    position: absolute
+    bottom: 0
+    left: 3%
+    right: 5%
+
+.hero
+    &-l
+        margin-right: 42%
+    // &-r
+    //     position: absolute
+    //     right: 10%
+
+.heart
+    position: absolute
+    bottom: 0
+    left: 48%
+    z-index: 1
