@@ -15,9 +15,10 @@ body
     margin: 0 auto
 
 
-
+a,
 img,
-button
+button,
+select
     cursor: pointer
     outline: none
     border: none
@@ -28,6 +29,7 @@ button
     color: #fff
     background-color: #4e5057
     font-size: 18px
+    z-index: 10000
 
 
 ul
@@ -37,6 +39,14 @@ a
     text-decoration: none
 a:hover
     color: $red
+
+.btn-red:hover
+    color: $red
+    background: #131313
+
+.btn-dark:hover
+    color: #131313
+    background: $red
 
 hr
     height: 1px
@@ -48,8 +58,9 @@ hr
 
 .btn
     display: flex
+    max-width: 270px
     margin: 70px auto
-    padding: 0px 50px
+    padding: 10px 50px
     box-shadow: 0 0 27px rgba(213, 62, 62, 0.29)
     border-radius: 10px
     background-color: $red
@@ -58,6 +69,7 @@ hr
     font-weight: 700
     line-height: 48px
     border: none
+    
     &-b
         background-color: #131313
 
@@ -77,3 +89,4 @@ hr
 @import 'shop'
 @import 'basket'
 @import 'media'
+@import 'choice'

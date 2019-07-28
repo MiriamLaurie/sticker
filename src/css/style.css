@@ -11,8 +11,10 @@ body {
   width: 1170px;
   margin: 0 auto; }
 
+a,
 img,
-button {
+button,
+select {
   cursor: pointer;
   outline: none;
   border: none; }
@@ -22,7 +24,8 @@ button {
   border-radius: 10px;
   color: #fff;
   background-color: #4e5057;
-  font-size: 18px; }
+  font-size: 18px;
+  z-index: 10000; }
 
 ul {
   list-style-type: none; }
@@ -34,6 +37,14 @@ a {
 a:hover {
   color: #ef483a; }
 
+.btn-red:hover {
+  color: #ef483a;
+  background: #131313; }
+
+.btn-dark:hover {
+  color: #131313;
+  background: #ef483a; }
+
 hr {
   height: 1px;
   border: none;
@@ -44,8 +55,9 @@ hr {
 
 .btn {
   display: flex;
+  max-width: 270px;
   margin: 70px auto;
-  padding: 0px 50px;
+  padding: 10px 50px;
   box-shadow: 0 0 27px rgba(213, 62, 62, 0.29);
   border-radius: 10px;
   background-color: #ef483a;
@@ -65,7 +77,8 @@ hr {
   width: 100%;
   height: 100vh;
   background: url("../img/fon.png") center;
-  position: relative; }
+  position: relative;
+  z-index: 0; }
 
 .header::after {
   content: '';
@@ -135,7 +148,8 @@ hr {
   position: absolute;
   bottom: 0;
   left: 3%;
-  right: 3%; }
+  right: 3%;
+  z-index: -1; }
 
 .heart {
   position: absolute;
@@ -179,7 +193,7 @@ hr {
   bottom: 9%; }
 
 .official-prev__btn {
-  padding: 0px 30px;
+  padding: 20px 30px;
   border-radius: 10px;
   color: #fff;
   background-color: #4e5057;
@@ -265,18 +279,23 @@ hr {
 
 .question {
   position: relative;
+  display: flex;
+  max-width: 270px;
+  justify-content: center;
+  padding: 10px 30px;
   left: 50%;
   transform: translateX(-50%); }
 
 .partner {
   background: url("../img/fon2.png") no-repeat;
-  padding-top: 90px;
+  padding-top: 70px;
   padding-bottom: 136px; }
 
 .partner-btn {
   display: flex;
+  max-width: 340px;
   margin: 90px auto 0;
-  padding: 0px 50px;
+  padding: 10px 50px;
   box-shadow: 0 0 27px rgba(213, 62, 62, 0.29);
   border-radius: 10px;
   background-color: #ef483a;
@@ -393,7 +412,12 @@ hr {
   text-align: center; }
 
 .your-sticker__btn {
-  margin-top: 50px; }
+  margin-top: 50px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #4e5057;
+  font-size: 18px; }
 
 .your-sticker-blocks {
   display: flex;
@@ -457,6 +481,9 @@ hr {
   justify-content: center;
   margin-right: 25px;
   width: 120px; }
+
+.left-row__price {
+  color: #000; }
 
 .left-row__options {
   width: 400px; }
@@ -538,3 +565,87 @@ input[type=checkbox]:checked + label:before {
   .descr {
     font-size: 28px;
     line-height: 38px; } }
+
+.choice {
+  display: flex;
+  justify-content: center;
+  margin: 50px auto; }
+
+.choice-p {
+  font-size: 18px;
+  font-weight: 700; }
+
+.choice-sticker, .choice-stickerpack {
+  width: 320px;
+  margin-right: 20px;
+  padding-left: 15px;
+  border-radius: 10px;
+  box-shadow: 3px 5px 15px 3px rgba(6, 7, 7, 0.28); }
+
+.choice-sticker {
+  padding-top: 20px; }
+
+.choice-stickerpack {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px; }
+
+.choice-stickerpack__link {
+  color: #000000;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 36px; }
+
+.choice__list {
+  width: 290px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ef483a; }
+
+.choice__title {
+  margin-bottom: 5px; }
+
+.choice__btn {
+  position: relative;
+  margin: 45px 50%;
+  transform: translateX(-50%);
+  padding: 10px 30px;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #ef483a;
+  font-size: 18px; }
+
+.choice-content {
+  border-radius: 10px;
+  box-shadow: 3px 5px 15px 3px rgba(6, 7, 7, 0.28); }
+
+.choice-content__blocks1 {
+  display: flex; }
+
+.choice-content__block1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 10px;
+  padding: 30px; }
+
+.choice-content__block1:hover {
+  border: 1px solid #ef483a;
+  border-radius: 5px;
+  margin: 9px; }
+
+.choice-content__blocks2 {
+  background: #f1f1f1; }
+
+.choice-content__block2 {
+  display: flex;
+  flex-wrap: wrap; }
+
+.block2__img {
+  padding: 20px; }
+
+.block2__img:hover {
+  background: #fff;
+  border: 1px solid #ef483a;
+  border-radius: 5px; }
